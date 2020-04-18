@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-html, body {
+html, body{
+  box-sizing: border-box;
+}
+ {
   height: 100%;
 }
 
-img.one {
+.one {
   height: 50%;
   width: 50%;
 }
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 
 	<body style="background-color:rgb(0,0,0);">
 
-<img calss="one" src="logo_FINAL11111.jpg" height="auto" width="400">
+<img calss="one,menu" src="logo_FINAL11111.jpg" height="auto" width="400">
 
-<h1 style="text-align:center;color:white;">Comercial catering equipment, refrigeration maintenance and repair</h1>
+<h1 class="main" style="text-align:center;color:white;"></h1>
 
 <p style="color:rgb(0,0,255);">I'm hosted with GitHub Pages :-)</p>
 
