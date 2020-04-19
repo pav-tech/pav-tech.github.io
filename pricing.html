@@ -43,7 +43,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (125px) */
 #main {margin: 25px 0px 0px 125px;}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 768px) {#main {margin-left: 0}}
 
 
 </style>
@@ -51,20 +51,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <body>
 
-<div class="flex-container">
-
-	<div class="w3-cell">
-
-		<img src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
-	
-	</div>
-
-
-	<div style="flex-grow:8" class="w3-cell">
-		<h1 style="text-align:center;color:white;">Always here to support your bussiness.</h1>
-	</div>
-
-</div>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav style="height: auto;" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
@@ -101,9 +87,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
+<!-- Page content -->
+<div class="flex-container">
+
+	<h1 id="main" class="w3-cell">
+
+		<img src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
+	
+	</h1>
 
 
-<div class="flex-container" id="PRICING">
+	<div style="flex-grow:8" class="w3-cell">
+		<h1 style="text-align:center; color:white;">Always here to support your bussiness.</h1>
+	</div>
+
+</div>
+
+
+<div class="flex-container">
 
 	<div class="w3-cell" style="height:600px">
 		<p style="text-align:center;color:white;font-size:40px">	PRICING	</p>
