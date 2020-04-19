@@ -44,8 +44,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin: 25px 0px 0px 125px;}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-@media only screen and (orientation: landscape) {#main {margin-left: 0}}
-
 
 
 </style>
@@ -69,7 +67,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: auto;" class="w3-sidebar w3-bar-block w3-round-large w3-small w3-hide-small w3-hide-medium w3-center">
+<nav style="height: auto;" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
+  <!-- Avatar image in top left corner -->
+  <div class="flex-container" style="height:175px; background-color:black;">
+
+  </div>
+  <!-- Menu buttons -->
   <a href="index" class="w3-bar-item w3-button w3-padding-large w3-black header-home">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
