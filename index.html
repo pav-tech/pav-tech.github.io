@@ -37,21 +37,14 @@ p.hub {
 
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 0px}
+.w3-row-padding img {margin-bottom: 0px;}
 /* Set the width of the sidebar to 125px */
 .w3-sidebar {width: 125px;height: auto;background: rgb(204,204,204);}
 /* Add a left margin to the "page content" that matches the width of the sidebar (125px) */
-#main {margin-left: 125px}
+#main {margin-left: 140px;}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-@media only screen and (orientation: landscape) {#main {margin-left: 0}}
-
-
-
-#align {
-  padding: 1px;
-  text-align: top;
-}
+@media only screen and (max-width: 600px) {#main {margin-left: 0;}}
+@media only screen and (orientation: landscape) {#main {margin-left: 0;}}
 
 
 </style>
@@ -98,9 +91,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page content -->
 <div class="flex-container">
 
-	<header id="align" style="margin-left:140px;" class="w3-cell">
+	<header class="w3-cell">
 
-		<img src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
+		<img id="main" src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
 	
 	</header>
 
@@ -112,7 +105,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 
-<div class="flex-container" id="HOME">
+<div class="flex-container" id="main">
 
 	<div class="w3-cell" style="height:600px">
 		<p style="text-align:center;color:white;font-size:40px">	HOME	</p>
