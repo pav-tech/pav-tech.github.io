@@ -9,8 +9,7 @@
 <meta name="author" content="PAV-TECH Pawel Stozek">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tangerine" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/w3css_fonts.asp">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -49,7 +48,7 @@ div.fixed {
 	}
 
 
-body, h1,h3,h4,h5,h6 {
+body, h1,h2,h3,h4,h5,h6 {
 	font-family: "Montserrat", sans-serif
 	}
 	
@@ -61,9 +60,10 @@ h1,h2  {
 
 /* Set the width of the sidebar to 125px */
 
-#w3-fonttype {
-	font-family: 'Amatic SC';
-	font-size: 70px;}
+
+.w3-tangerine {
+	font-family: 'Tangerine', serif;
+	}
 
 .w3-sidebar {
 	width: 125px;
@@ -98,7 +98,7 @@ h1,h2  {
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
+<nav style="height: 100%;" class="w3-sidebar w3-animate-opacity w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <div class="w3-bar-item;" style="margin:auto; background-color: #222; height:150px"></div>
   <!-- Menu buttons -->
@@ -135,19 +135,19 @@ h1,h2  {
 
 	<h1 id="main" style="width: 25%">
 
-		<img src="logo.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
+		<img class="w3-animate-opacity" src="logo.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
 	</h1>
 
 
-	<div id="main" style="flex-grow:6" class="w3-cell">
-		<h2 id="w3-fonttype" style="text-align:relative; color:white">Always here to support your bussiness.</h2>
+	<div style="flex-grow:6" class="w3-cell; w3-animate-opacity">
+		<p class="w3-tangerine" style="text-align:relative; color:white; font-size: 50px">Always here to support your bussiness.</p>
 	</div>
 
 </div>
 
 
-<div class="flex-container" id="main">
+<div class="flex-container; w3-animate-opacity" id="main">
 
 	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
 		<h1 style="text-align:center;color:white">	HOME	</h1>
@@ -156,7 +156,7 @@ h1,h2  {
 
 
 <div class="w3-col l1 mm1 s1 w3-right">
-<p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
+<p class="hub; w3-animate-opacity" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
 </div>
 
 	</body>
