@@ -16,34 +16,67 @@
 <style>
 
 
-body {background-color:rgb(0,0,0);}
+body {
+	background-color: rgb(0,0,0);	
+	}
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	}
 
 .flex-container > div {
-  width: auto;
-  margin: 15px;
-  text-align: center;
-}
+	width: auto;
+	margin: 0px;
+	text-align: center;
+	}
 
-p.hub {
-	border: 1px dotted grey;
-}
+.hub {
+	font-size:20px;
+	text-align: center;
+	}
+
+div.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	border: 1px solid #222;
+	}
 
 
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 0px}
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif
+	}
+	
+h2 {
+	vertical-align: top;
+	line-height: 3;
+	font-size: auto}
+
 /* Set the width of the sidebar to 125px */
-.w3-sidebar {width: 125px;height: auto;background: #222;}
+
+.w3-sidebar {
+	width: 125px;
+	height: auto;
+	background: #222;
+	}
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (125px) */
-#main {margin: 25px 0px 0px 125px;}
+
+#main {
+	margin: 25px 0px 25px 0px;
+	}
+
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 768px) {#main {margin-left: 0}}
+
+@media only screen and (min-width: 1080px) {
+	#main {
+		margin-left: 125px;
+		}
+	}
 
 
 </style>
@@ -53,26 +86,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
+<nav style="height: 100%;" class="w3-sidebar w3-animate-left w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
   <!-- Avatar image in top left corner -->
-  <div class="flex-container" style="height:175px; background-color: #222;">
+  <div class="flex-container" style="height:125px; background-color: #222;">
 
   </div>
   <!-- Menu buttons -->
-  <a href="index" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-home">
-    <i class="fa fa-home w3-xxlarge"></i>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-home">
+    <i class="fa fa-home w3-xlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="about" class="w3-bar-item w3-button w3-padding-large w3-black header-about">
-    <i class="fa fa-user w3-xxlarge"></i>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-black header-about">
+    <i class="fa fa-user w3-xlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="pricing" class="w3-bar-item w3-button w3-padding-large w3-black header-pricing">
-    <i class="fa fa-money w3-xxlarge"></i>
+  <a href="pricing.html" class="w3-bar-item w3-button w3-padding-large w3-black header-pricing">
+    <i class="fa fa-money w3-xlarge"></i>
     <p>PRICING</p>
   </a>
-  <a href="contact" class="w3-bar-item w3-button w3-padding-large w3-black header-contact">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-black header-contact">
+    <i class="fa fa-envelope w3-xlarge"></i>
     <p>CONTACT</p>
   </a>
 </nav>
@@ -92,13 +125,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 	<h1 id="main" class="w3-cell">
 
-		<img src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
+		<img class="w3-animate-opacity" src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
 	
 	</h1>
 
 
-	<div style="flex-grow:8" class="w3-cell">
-		<h1 style="text-align:center; color:white;">Always here to support your bussiness.</h1>
+	<div style="flex-grow:12" class="w3-cell">
+		<h2 style="flex-grow:22 text-align:relative; color:white;">Always here to support your bussiness.</h2>
 	</div>
 
 </div>
@@ -106,15 +139,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <div class="flex-container">
 
-	<div class="w3-cell" style="height:600px">
+	<div class="w3-cell" style="height:auto">
 		<p style="text-align:center;color:white;font-size:40px">	HOME	</p>
 	</div>
 </div>
 
 
-
-<p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Hosted with GitHub Pages.</p>
-
+<div class="fixed">
+<p class="w3-bottom, hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Hosted with GitHub Pages.</p>
+</div>
 
 	</body>
 </html>
