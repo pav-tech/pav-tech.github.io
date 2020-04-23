@@ -8,8 +8,8 @@
  engineers, servicing, air conditioning,">
 <meta name="author" content="PAV-TECH Pawel Stozek">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/w3css_fonts.asp">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -17,7 +17,7 @@
 
 
 body {
-	background-color: rgb(0,0,0);	
+	background-color: rgb(0,0,0);
 	}
 
 .flex-container {
@@ -52,13 +52,18 @@ body, h1,h2,h3,h4,h5,h6 {
 	font-family: "Montserrat", sans-serif
 	}
 	
-h2 {
+h1,h2  {
 	text-shadow: 2px 1px #222;
 	vertical-align: top;
 	line-height: 3;
 	font-size: auto}
 
 /* Set the width of the sidebar to 125px */
+
+
+.w3-tangerine {
+	font-family: 'Tangerine', serif;
+	}
 
 .w3-sidebar {
 	width: 125px;
@@ -69,14 +74,14 @@ h2 {
 /* Add a left margin to the "page content" that matches the width of the sidebar (125px) */
 
 #main {
-	margin: 25px 0px 25px 0px;
+	margin: 25px 0px 25px 125px;
 	}
 
 /* Remove margins from "page content" on small screens */
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 	#main {
-		margin-left: 125px;
+		margin-left: 0px;
 		}
 	}
 
@@ -85,29 +90,32 @@ h2 {
 </head>
 
 <body>
+<!-- Fading logo... -->
+
+
+
+
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%;" class="w3-sidebar w3-animate-left w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
+<nav style="height: 100%;" class="w3-sidebar w3-animate-opacity w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <div class="flex-container" style="height:125px; background-color: #222;">
-
-  </div>
+  <div class="w3-bar-item;" style="margin:auto; background-color: #222; height:150px"></div>
   <!-- Menu buttons -->
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-home">
-    <i class="fa fa-home w3-xlarge"></i>
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-home">
+    <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
   <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-black header-about">
-    <i class="fa fa-user w3-xlarge"></i>
+    <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
   <a href="pricing.html" class="w3-bar-item w3-button w3-padding-large w3-black header-pricing">
-    <i class="fa fa-money w3-xlarge"></i>
+    <i class="fa fa-money w3-xxlarge"></i>
     <p>PRICING</p>
   </a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-black header-contact">
-    <i class="fa fa-envelope w3-xlarge"></i>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-small w3-black header-contact">
+    <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
 </nav>
@@ -125,30 +133,30 @@ h2 {
 <!-- Page content -->
 <div class="flex-container">
 
-	<h1 id="main" style="width: 33%">
+	<h1 id="main" style="width: 25%">
 
 		<img class="w3-animate-opacity" src="logo.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
 	</h1>
 
 
-	<div style="flex-grow:12; background-color: green" class="w3-cell">
-		<h2 style="text-align:relative; color:white;">Always here to support your bussiness.</h2>
+	<div style="flex-grow:6" class="w3-cell; w3-animate-opacity">
+		<p class="w3-tangerine" style="text-align:relative; color:white; font-size: 50px">Always here to support your bussiness.</p>
 	</div>
 
 </div>
 
 
-<div class="flex-container" id="main">
+<div class="flex-container; w3-animate-opacity" id="main">
 
-	<div class="w3-col l9 m10 s10 w3-center" style="height:auto; background-color: yellow">
-		<p style="text-align:center;color:white;font-size:40px">	HOME	</p>
+	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
+		<h1 style="text-align:center;color:white">	HOME	</h1>
 	</div>
 </div>
 
 
-<div class="fixed">
-<p class="w3-bottom, hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Hosted with GitHub Pages.</p>
+<div class="w3-col l1 mm1 s1 w3-right">
+<p class="hub; w3-animate-opacity" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
 </div>
 
 	</body>

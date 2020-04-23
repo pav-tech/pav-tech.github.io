@@ -8,7 +8,7 @@
  engineers, servicing, air conditioning,">
 <meta name="author" content="PAV-TECH Pawel Stozek">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,34 +16,69 @@
 <style>
 
 
-body {background-color:rgb(0,0,0);}
+body {
+	background-color: rgb(0,0,0);	
+	}
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	}
 
 .flex-container > div {
-  width: auto;
-  margin: 15px;
-  text-align: center;
-}
+	width: auto;
+	margin: 0px;
+	text-align: center;
+	text-size: auto;
+	}
 
-p.hub {
-	border: 1px dotted grey;
-}
+.hub {
+	font-size:20px;
+	text-align: center;
+	}
+
+div.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	border: 1px solid #222;
+	}
 
 
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 0px}
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif
+	}
+	
+h1,h2,p {
+	text-shadow: 2px 1px #222;
+	vertical-align: top;
+	line-height: 3;
+	font-size: auto}
+
 /* Set the width of the sidebar to 125px */
-.w3-sidebar {width: 125px;height: auto;background: #222;}
+
+.w3-sidebar {
+	width: 125px;
+	height: auto;
+	background: #222;
+	}
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (125px) */
-#main {margin: 25px 0px 0px 125px;}
+
+#main {
+	margin: 25px 0px 25px 125px;
+	}
+
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 768px) {#main {margin-left: 0}}
+
+@media only screen and (max-width: 1080px) {
+	#main {
+		margin-left: 0px;
+		}
+	}
 
 
 </style>
@@ -53,25 +88,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hide-medium w3-center">
+<nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <div class="flex-container" style="height:175px; background-color: #222;">
-
-  </div>
+  <div class="w3-bar-item;" style="margin:auto; background-color: #222; height:150px"></div>
   <!-- Menu buttons -->
-  <a href="index" class="w3-bar-item w3-button w3-padding-large w3-black header-home">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-black header-home">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="about" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-about">
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-about">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="pricing" class="w3-bar-item w3-button w3-padding-large w3-black header-pricing">
+  <a href="pricing.html" class="w3-bar-item w3-button w3-padding-large w3-black header-pricing">
     <i class="fa fa-money w3-xxlarge"></i>
     <p>PRICING</p>
   </a>
-  <a href="contact" class="w3-bar-item w3-button w3-padding-large w3-black header-contact">
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-small w3-black header-contact">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -90,31 +123,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page content -->
 <div class="flex-container">
 
-	<h1 id="main" class="w3-cell">
+	<h1 id="main" style="width: 25%">
 
-		<img src="logo.jpg" alt="PAV-TECH" style="width:350px;height:auto;">
+		<img src="logo.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
 	</h1>
 
 
-	<div style="flex-grow:8" class="w3-cell">
-		<h1 style="text-align:center; color:white;">Always here to support your bussiness.</h1>
+	<div style="flex-grow:6" class="w3-cell">
+		<p style="text-align:relative; color:white; font-size: relative">Always here to support your bussiness.</p>
 	</div>
 
 </div>
 
 
-<div class="flex-container">
+<div class="flex-container" id="main">
 
-	<div class="w3-cell" style="height:600px">
-		<p style="text-align:center;color:white;font-size:40px">	ABOUT	</p>
+	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
+		<h1 style="text-align:center;color:white">	ABOUT	</h1>
 	</div>
 </div>
 
 
-
-<p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Hosted with GitHub Pages.</p>
-
+<div class="w3-col l1 mm1 s1 w3-right">
+<p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
+</div>
 
 	</body>
 </html>
