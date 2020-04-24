@@ -31,7 +31,6 @@ body {
 	width: auto;
 	margin: 0px;
 	text-align: center;
-	text-size: auto;
 	}
 
 .hub {
@@ -95,9 +94,22 @@ h2  {
 @media only screen and (max-width: 1080px) {
 	.mainlogo {
 		width: 60%;
-		font-size-adjust: 15px;
 		}
 	}
+
+.textlogo {
+	font-size: 50px;
+	}
+
+/* Change text next to logo size on small screens */
+
+@media only screen and (max-width: 1080px) {
+	.textlogo {
+		font-size: 40px;
+		}
+	}
+
+
 
 
 </style>
@@ -155,7 +167,7 @@ h2  {
 
 
 	<div id="main" style="flex-grow:6" class="w3-cell">
-		<p class="w3-tangerine" style="text-align:relative; color:white; font-size: 50px">Always here to support your bussiness.</p>
+		<p class="w3-tangerine textlogo" style="text-align:center; color:white">Always here to support your bussiness.</p>
 	</div>
 
 </div>
