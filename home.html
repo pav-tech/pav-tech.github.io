@@ -20,6 +20,18 @@ body {
 	background-color: rgb(0,0,0);
 	}
 
+.bg-image {
+  background-image: url("background.jpg"); /* The image used */
+  background-color: black; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#opac {
+	opacity: 0.5}
+
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -63,6 +75,7 @@ h2  {
 .w3-sidebar {
 	width: 125px;
 	height: auto;
+	align-items: middle;
 	background: #222;
 	}
 
@@ -125,7 +138,7 @@ h2  {
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <div class="w3-bar-item;" style="margin:auto; background-color: #222; height:150px"></div>
+  <div class="w3-bar-item bg-image" style="opacity:0.3; margin:auto; background-color: #222; height:150px"></div>
   <!-- Menu buttons -->
   <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black header-home">
     <i class="fa fa-home w3-xxlarge"></i>
@@ -165,8 +178,8 @@ h2  {
 	</h1>
 
 
-	<div id="main" style="flex-grow:6" class="w3-cell">
-		<p class="w3-tangerine textlogo" style="text-align:center; color:white">Always here to support your bussiness.</p>
+	<div id="main, opac" style="height: 100%; flex-grow:6" class="bg-image  w3-cell">
+		<p class="w3-tangerine textlogo opacity: 1" style="text-align:center; color: white"><b>Always here to support your bussiness.</b></p>
 	</div>
 
 </div>
@@ -177,6 +190,8 @@ h2  {
 	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
 		<h2 style="text-align:center;color:white">	HOME	</h2>
 	</div>
+	
+	<div class="w3-col l9 m8 s8 w3-center"></div>
 </div>
 
 
