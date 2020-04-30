@@ -20,7 +20,7 @@ body {
 	background-color: rgb(0,0,0);
 	}
 
-.bag-image {
+.bg-image {
   background-image: url("background.jpg"); /* The image used */
   background-color: black; /* Used if the image is unavailable */
   height: 600px; /* You must set a specified height */
@@ -31,7 +31,6 @@ body {
 
 #opac {
 	opacity: 0.5}
-
 
 .flex-container {
 	display: flex;
@@ -86,18 +85,31 @@ h2  {
 	margin: 25px 0px 25px 125px;
 	}
 
+/* Logo size on large and medium screens */
+	
+	.mainlogo_l {
+		align-items: right;
+		width: 20%;
+		height: auto;
+		}
 
-.mainlogo {
-	width: 26%;
-	}
+	.mainlogo_t {
+		width: 33%;
+		height: auto;
+		}
 
+
+	.mainlogo_gap {
+		width: 10;
+		}
+
+
+/* Text next to logo size on large and medium screens */
 
 .textlogo {
-  flex: inherit;
-  max-height: 100%;
-  max-width: 600px;
-  object-fit: scale-down;
-}
+	font-size: 50px;
+	}
+
 
 
 /* Change size on small screens */
@@ -106,31 +118,28 @@ h2  {
 	
 	#main {
 		margin-left: 0px;
+		margin-top: 35px;
 		}
-	
-	.mainlogo {
-		position: absolute;
-		left: 5px;
-		top: 25px;
-		margin-left: 0px;
-		margin-top: 25px;
-		width: 40%;
-		align-content: left;
+
+	img {
+		width:20%;
 		}
-	
+
+	.mainlogo_l {
+		width: 31%;
+		}
+
+	.mainlogo_t {
+		width: 38%;
+		}
+
+	.mainlogo_gap {
+		width: 27%;
+		}
+
 	.textlogo {
-		position: absolute;
-		right: 5px;
-		top: 45px;
-		margin-left: 0px;
-		margin-top: 25px;
-		max-width: 40%;
-		align-content: right;
+		font-size: large;
 		}
-	
-	.maintext {
-		margin-top: 400px;}
-	}
 }
 
 
@@ -182,16 +191,20 @@ h2  {
 <!-- Page content -->
 <div class="flex-container">
 
-	<h1 id="main" class="mainlogo">
+	<h1 id="main" class="mainlogo_l">
 
-		<img src="logo_final.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important"></img>
+		<img src="logo_final.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
 	</h1>
 
+<h1 id="main" class="mainlogo_gap"></h1>
 
-	<div id="main, opac" style="height: 100%; flex-grow:6" class="bg-image  w3-cell">
-		<img src="logo_text.jpg" alt="PAV-TECH" class="textlogo"></img>
-	</div>
+	<h1 id="main" class="mainlogo_t">
+
+		<img src="logo_text.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
+	
+	</h1>
+	
 
 </div>
 
@@ -199,17 +212,14 @@ h2  {
 <div class="flex-container" id="main">
 
 	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
-		<h2 style="text-align:center; color:white">	HOME	</h2>
-		<p style="text-align: center; color: white">jfwgeyfgbweygfjfwgeyfgbweygfjf
-		wgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfg
-		bweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygfjfwgeyfgbweygf</p>
+		<h2 style="text-align:center;color:white">	HOME	</h2>
 	</div>
 	
-	<div class="w3-col l9 m8 s8 w3-center"> a </div>
+	<div class="w3-col l9 m8 s8 w3-center"></div>
 </div>
 
 
-<div class="w3-col l1 m2 s2 w3-right maintext">
+<div class="w3-col l1 m2 s2 w3-right">
 <p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
 </div>
 
