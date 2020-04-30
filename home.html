@@ -32,12 +32,6 @@ body {
 #opac {
 	opacity: 0.5}
 
-.D {
-  flex: inherit;
-  max-height: 100%;
-  max-width: 600px;
-  object-fit: scale-down;
-}
 
 .flex-container {
 	display: flex;
@@ -106,6 +100,15 @@ h2  {
 	width: 26%;
 	}
 
+
+.D {
+  flex: inherit;
+  max-height: 100%;
+  max-width: 600px;
+  object-fit: scale-down;
+}
+
+
 /* Change logo size on small screens */
 
 @media only screen and (max-width: 992px) {
@@ -115,6 +118,7 @@ h2  {
 		}
 	.D {
 	max-width: 350px;
+	align-items: right;
 	}
 
 /* Text next to logo size on large and medium screens */
