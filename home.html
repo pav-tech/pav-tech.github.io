@@ -20,7 +20,7 @@ body {
 	background-color: rgb(0,0,0);
 	}
 
-.bg-image {
+.bag-image {
   background-image: url("background.jpg"); /* The image used */
   background-color: black; /* Used if the image is unavailable */
   height: 600px; /* You must set a specified height */
@@ -31,6 +31,13 @@ body {
 
 #opac {
 	opacity: 0.5}
+
+.D {
+  flex: 1 1 0;
+  max-height: 100%;
+  max-width: 800px;
+  object-fit: scale-down;
+}
 
 .flex-container {
 	display: flex;
@@ -173,13 +180,13 @@ h2  {
 
 	<h1 id="main" class="mainlogo">
 
-		<img src="logo.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
+		<img src="logo_final.bmp" alt="PAV-TECH" style="height: auto; width: 100% !important"></img>
 	
 	</h1>
 
 
 	<div id="main, opac" style="height: 100%; flex-grow:6" class="bg-image  w3-cell">
-		<p class="w3-tangerine textlogo opacity: 1" style="text-align:center; color: white"><b>Always here to support your bussiness.</b></p>
+		<img src="logo_text.bmp" alt="PAV-TECH" class="D"></img>
 	</div>
 
 </div>
