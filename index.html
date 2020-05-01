@@ -40,9 +40,6 @@ img {
 	height: auto;
 	}
 
-#balnk {
-	display: none;
-	}
 
 </style>
 </head>
@@ -53,13 +50,10 @@ img {
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 9500);
+  myVar = setTimeout(showPage, 9000);
 }
 
 function showPage() {
-
-  document.getElementById("blank").style.display = "none";
-
   location.replace("indexone.html")
 }
 </script>
