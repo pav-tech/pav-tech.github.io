@@ -9,7 +9,7 @@
 <meta name="author" content="PAV-TECH Pawel Stozek">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/w3css_fonts.asp">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -17,8 +17,20 @@
 
 
 body {
-	background-color: rgb(0,0,0);	
+	background-color: rgb(0,0,0);
 	}
+
+.bg-image {
+  background-image: url("background.jpg"); /* The image used */
+  background-color: black; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#opac {
+	opacity: 0.5}
 
 .flex-container {
 	display: flex;
@@ -28,10 +40,9 @@ body {
 	}
 
 .flex-container > div {
-	width: auto;
+	width: 100%;
 	margin: 0px;
 	text-align: center;
-	text-size: auto;
 	}
 
 .hub {
@@ -39,30 +50,32 @@ body {
 	text-align: center;
 	}
 
-div.fixed {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 100px;
-	border: 1px solid #222;
+.w3-tangerine {
+	font-family: 'Tangerine', serif;
 	}
 
 
-body, h1,h2,h3,h4,h5,h6 {
+body,h3,h4,h5,h6 {
 	font-family: "Montserrat", sans-serif
 	}
+
+h3,h4,h5,h6 {
+	font-size: 40px;
+	}
 	
-h1,h2,p {
+h2  {
 	text-shadow: 2px 1px #222;
 	vertical-align: top;
 	line-height: 3;
-	font-size: auto}
+	font-size: auto
+	}
 
 /* Set the width of the sidebar to 125px */
 
 .w3-sidebar {
-	width: 125px;
+	width: 123px;
 	height: auto;
+	align-items: middle;
 	background: #222;
 	}
 
@@ -72,25 +85,77 @@ h1,h2,p {
 	margin: 25px 0px 25px 125px;
 	}
 
-/* Remove margins from "page content" on small screens */
 
-@media only screen and (max-width: 1080px) {
-	#main {
-		margin-left: 0px;
-		}
+#main_part {
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #222;
 	}
+
+
+
+/* Logo size on large and medium screens */
+	
+	.mainlogo_l {
+		position: right;
+		width: 20%;
+		height: auto;
+		}
+
+	.mainlogo_t {
+		width: 44%;
+		height: auto;
+		}
+
+
+	.mainlogo_gap {
+		width: 1%;
+		height: auto;
+		}
+
+
+/* Change size on small screens */
+
+@media only screen and (max-width: 992px) {
+
+
+	.mainlogo_l {
+		width: 20%;
+		}
+
+	.mainlogo_t {
+		width: 50%;
+		}
+
+	.mainlogo_gap {
+		width: 10%;
+		}
+
+	.textlogo {
+		font-size: large;
+		}
+}
+
+
+
 
 
 </style>
 </head>
 
 <body>
+<!-- Fading logo... -->
+
+
+
+
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
+<nav style="height: 100%; border-right-color: #222; border-right-width: 1px; border-right-style: solid; border-left-color: #222; border-left-width: 1px; border-left-style: solid"
+ class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <div class="w3-bar-item;" style="margin:auto; background-color: #222; height:150px"></div>
+  <div class="w3-bar-item bg-image" style="opacity:0.3; margin:auto; background-color: #222; height:150px"></div>
   <!-- Menu buttons -->
   <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-black header-home">
     <i class="fa fa-home w3-xxlarge"></i>
@@ -113,39 +178,47 @@ h1,h2,p {
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-mobile w3-hide-large">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="index" class="w3-bar-item w3-button header-home" style="width:25% !important">HOME</a>
-    <a href="about" class="w3-bar-item w3-button header-about" style="width:25% !important">ABOUT</a>
-    <a href="pricing" class="w3-bar-item w3-button header-pricing" style="width:25% !important">PRICING</a>
-    <a href="contact" class="w3-bar-item w3-button header-contact" style="width:25% !important">CONTACT</a>
+    <a href="home.html" class="w3-bar-item w3-button header-home" style="width:25% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button header-about" style="width:25% !important">ABOUT</a>
+    <a href="pricing.html" class="w3-bar-item w3-button header-pricing" style="width:25% !important">PRICING</a>
+    <a href="contact.html" class="w3-bar-item w3-button header-contact" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
 <!-- Page content -->
 <div class="flex-container">
 
-	<h1 id="main" style="width: 25%">
+	<h1 id="main" class="mainlogo_l">
 
-		<img src="logo.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
+		<img src="logo_final.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
 	</h1>
 
+<h1 id="main" class="mainlogo_gap"></h1>
 
-	<div style="flex-grow:6" class="w3-cell">
-		<p style="text-align:relative; color:white; font-size: relative">Always here to support your bussiness.</p>
-	</div>
+	<h1 id="main" class="mainlogo_t">
+
+		<img src="logo_text.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
+	
+	</h1>
+	
 
 </div>
 
 
 <div class="flex-container" id="main">
 
-	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
-		<h1 style="text-align:center;color:white">	ABOUT	</h1>
+	<div id="main_part" class="w3-col l11 m10 s10 w3-center" style="height: auto">
+		<h2 style="text-align:center;color:white">	ABOUT	</h2>
 	</div>
+
+
+	<div class="w3-col l11 m8 s8 w3-center"><h1 style="text-align:left;color:white">asfcqwfsnckjsddvjgruy svwuef fweewf wgewegwe wg  we g w uyfwgferhfkuy eguyfgffawvh wvhgwau u w uyreuy</h1></div>
+
 </div>
+<br>
 
-
-<div class="w3-col l1 mm1 s1 w3-right">
+<div class="w3-col l11 m2 s2 w3-right">
 <p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
 </div>
 

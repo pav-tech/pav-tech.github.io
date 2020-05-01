@@ -40,7 +40,7 @@ body {
 	}
 
 .flex-container > div {
-	width: auto;
+	width: 100%;
 	margin: 0px;
 	text-align: center;
 	}
@@ -73,7 +73,7 @@ h2  {
 /* Set the width of the sidebar to 125px */
 
 .w3-sidebar {
-	width: 125px;
+	width: 123px;
 	height: auto;
 	align-items: middle;
 	background: #222;
@@ -87,8 +87,8 @@ h2  {
 
 
 #main_part {
-	margin-left: 125px;
-	width: 90%;
+	margin-left: 10px;
+	margin-right: 10px;
 	background: #222;
 	}
 
@@ -119,12 +119,12 @@ h2  {
 @media only screen and (max-width: 992px) {
 
 	
-#main_part {
-	align: center;
-	width: 98%;
-	margin-left: 1%;
-	margin-right: 1%;
-	}
+	#main_part {
+		align: center;
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		}
 	
 	#main {
 		margin-left: 0px;
@@ -168,7 +168,8 @@ h2  {
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%;" class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
+<nav style="height: 100%; border-right-color: #222; border-right-width: 1px; border-right-style: solid; border-left-color: #222; border-left-width: 1px; border-left-style: solid"
+ class="w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <div class="w3-bar-item bg-image" style="opacity:0.3; margin:auto; background-color: #222; height:150px"></div>
   <!-- Menu buttons -->
@@ -221,17 +222,19 @@ h2  {
 </div>
 
 
-<div class="flex-container" id="main_part">
+<div class="flex-container" id="main">
 
-	<div class="w3-col l11 m10 s10 w3-center" style="height:auto">
+	<div id="main_part" class="w3-col l11 m10 s10 w3-center" style="height: auto">
 		<h2 style="text-align:center;color:white">	HOME	</h2>
 	</div>
-	
-	<div class="w3-col l9 m8 s8 w3-center"></div>
+
+
+	<div class="w3-col l11 m8 s8 w3-center"><h1 style="text-align:left;color:white">asfcqwfsnckjsddvjgruy svwuef fweewf wgewegwe wg  we g w uyfwgferhfkuy eguyfgffawvh wvhgwau u w uyreuy</h1></div>
+
 </div>
+<br>
 
-
-<div class="w3-col l1 m2 s2 w3-right">
+<div class="w3-col l11 m2 s2 w3-right">
 <p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
 </div>
 
