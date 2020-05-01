@@ -9,39 +9,127 @@
 <meta name="author" content="PAV-TECH Pawel Stozek">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="w3.css">
-
 <style>
 
 body {
 	background-color: rgb(0,0,0);
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+img {
+	width: 100%;
+	height: auto;
 	}
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	}
+
+
+
+#font {
+	color: white;
+	font-size:60px;
+	font-style:;
+	height: auto;
+	width: 100% !important;
+	}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	max-width:600px;
+	}
+
+
+	.mainlogo_l {
+		width: 40%;
+		height: auto;
+		}
+
+	.mainlogo_t {
+		width: 50%;
+		height: auto;
+		}
+
+
+	.mainlogo_gap {
+		width: 100%;
+		height: auto;
+		}
+
+
+/* Change size on small screens */
+
+@media only screen and (max-width: 992px) {
+
+	#font {
+		font-size: 10px;
+		}
+
+	img {
+		width:50%;
+		}
+
+	.mainlogo_l {
+		width: 70%;
+		}
+
+	.mainlogo_t {
+		width: 80%;
+		}
+
+	.mainlogo_gap {
+		width: 0%;
+		}
+}
 
 
 
 </style>
 </head>
+<body onload="myFunction()">
 
-<body>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 9500);
+}
+
+function showPage() {
+  location.replace("home.html")
+}
+</script>
+
+
 <!-- Page content -->
-<div class="flex-container">
+<div style="border-color: white; w3-mobile; border-style:solid" class="flex-container" id="">
 
-	<h1 id="main" class="mainlogo_l">
+	<h1 class="center w3-animate-fading mainlogo_l">
 
-		<img src="logo_final.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
+		<img src="logo.jpg" alt="PAV-TECH">
 	
 	</h1>
-
-<h1 id="main" class="mainlogo_gap"></h1>
-
-	<h1 id="main" class="mainlogo_t">
-
-		<img src="logo_text.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
-	</h1>
+	<h1 id="font" class="w3-col l11 m10 s10 center w3-animate-fading mainlogo_t" style="height: auto">Always here to support your bussiness.</h1>
 	
 
 </div>
-
 
 	</body>
 </html>
