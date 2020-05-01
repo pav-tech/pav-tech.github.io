@@ -40,6 +40,9 @@ img {
 	height: auto;
 	}
 
+#balnk {
+	display: none;
+	}
 
 </style>
 </head>
@@ -54,6 +57,9 @@ function myFunction() {
 }
 
 function showPage() {
+
+  document.getElementById("blank").style.display = "none";
+
   location.replace("indexone.html")
 }
 </script>
