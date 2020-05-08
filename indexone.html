@@ -32,8 +32,9 @@ body {
 
 .bg-image-white {
   background-image: url("backgroundwhite.jpg"); /* The image used */
-  background-color: rgb(20,20,20); /* Used if the image is unavailable */
-  height: 600px; /* You must set a specified height */
+  background-color: white; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  width: 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -263,7 +264,14 @@ hr {
 	</div>
 
 
-	<div class="w3-container bg-image-white w3-animate-opacity w3-col l11 m11 s11 w3-center"><h1 style="text-align:left;color:red;">Website under construction</h1></div>
+	<div id="main_part" class="w3-container w3-white w3-animate-opacity w3-col l11 m11 s11 w3-center" style="height: auto;margin-bottom:0px;">
+		<h2 style="text-align:center;color:red;">Under construction</h2>
+	</div>
+
+
+	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center" style="min-height:600px;padding-right: 0px;padding-left: 0px">
+		<h1 class="bg-image-white" style="text-align:left;color:red;margin-top:0px;">Website under construction</h1>
+	</div>
 
 </div>
 <br>
