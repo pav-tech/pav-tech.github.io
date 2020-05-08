@@ -71,7 +71,7 @@ body,h3,h4,h5,h6 {
 	}
 
 h3,h4,h5,h6 {
-	font-size: 40px;
+	font-size: 30px;
 	}
 	
 h2  {
@@ -121,6 +121,10 @@ hr {
 	margin: 15px 0px 15px 125px;
 	}
 
+#contact {
+	height:380px;
+	}
+
 
 
 /* Logo size on large and medium screens */
@@ -147,6 +151,13 @@ hr {
 
 @media only screen and (max-width: 992px) {
 
+	h3 {
+		font-size: 6em;
+		}
+	
+	#contact {
+		height:80px;
+		}
 	
 	#main_hr {
 		margin-left: 0px;
@@ -202,7 +213,7 @@ hr {
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%; border-right-color: #222; border-right-width: 1px; border-right-style: solid; border-left-color: #222; border-left-width: 1px; border-left-style: solid"
+<nav style="height: 100%; border-right-color: #222; border-right-width: 1px; border-right-style: solid; border-left-color: #222; border-left-width: 1px; border-left-style: solid; top:0px;"
  class="w3-animate-opacity w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <div class="w3-bar-item bg-image" style="opacity:0.3; margin:auto; background-color: #222; height:150px"></div>
@@ -269,8 +280,8 @@ hr {
 	</div>
 
 
-	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center" style="min-height:600px;padding-right: 0px;padding-left: 0px">
-		<h1 class="bg-image-white" style="text-align:left;color:red;margin-top:0px;">Website under construction</h1>
+	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center" style="min-height:400px;padding-right: 0px;padding-left: 0px">
+		<h3 id="contact" class="bg-image-white" style="text-align:left;color:red;margin-top:0px;">Contact us</h3>
 	</div>
 
 </div>
