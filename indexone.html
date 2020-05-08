@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="body_margin">
 <head>
 <title>PAV-TECH.co.uk Here To Help</title>
 <meta charset="UTF-8">
@@ -80,6 +80,14 @@ h2  {
 	font-size: auto
 	}
 
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+	}
 
 
 .w3-sidebar {
@@ -89,9 +97,12 @@ h2  {
 	background: #222;
 	}
 
+#body_margin {
+	margin: 1px 1px 1px 1px;
+	}
 
 
-#main {
+#main_margin {
 	margin: 25px 0px 25px 125px;
 	font-size:0.1em;
 	}
@@ -106,7 +117,7 @@ h2  {
 
 
 #main_hr {
-	margin: 25px 0px 25px 125px;
+	margin: 15px 0px 15px 125px;
 	}
 
 
@@ -126,7 +137,7 @@ h2  {
 
 
 	.mainlogo_gap {
-		width: 1%;
+		width: 30%;
 		height: auto;
 		}
 
@@ -142,13 +153,14 @@ h2  {
 	
 	#main_part {
 		align: center;
-		width: 98%;
+
 		margin-left: 1%;
 		margin-right: 1%;
 		}
 	
-	#main {
+	#main_margin {
 		margin-left: 0px;
+		margin-right: 0px;
 		margin-top: 35px;
 		}
 
@@ -165,7 +177,7 @@ h2  {
 		}
 
 	.mainlogo_gap {
-		width: 10%;
+		width: 20%;
 		}
 
 	.textlogo {
@@ -223,17 +235,17 @@ h2  {
 </div>
 
 <!-- Page content -->
-<div class="flex-container">
+<div class="flex-container" id="main_margin">
 
-	<h1 id="main" class="w3-animate-opacity mainlogo_l">
+	<h1 class="w3-animate-opacity mainlogo_l" style="margin-top: 0px; margin-bottom: 0px;">
 
 		<img src="logo_final.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
 	</h1>
 
-<h1 id="main" class="mainlogo_gap"></h1>
+<p id="main" class="mainlogo_gap"></p>
 
-	<h1 id="main" class="w3-animate-opacity mainlogo_t">
+	<h1 id="main" class="w3-animate-opacity mainlogo_t" style="margin-top: 0px; margin-bottom: 0px;">
 
 		<img src="logo_text.jpg" alt="PAV-TECH" style="height: auto; width: 100% !important">
 	
@@ -242,16 +254,16 @@ h2  {
 
 </div>
 
-<hr id="main_hr" style="color:white; height:2px; width:100%;">
+<hr id="main_hr" style="color:white;height:2px;width:100%;margin-top: 2px;margin-bottom: 2px;border-top-width: 1px;border-bottom-width: 1px;">
 
-<div class="flex-container" id="main">
+<div class="flex-container" id="main_margin">
 
-	<div id="main_part" class="w3-animate-opacity w3-col l11 m10 s10 w3-center" style="height: auto">
+	<div id="main_part" class="w3-container w3-blue w3-animate-opacity w3-col l11 m11 s11 w3-center" style="height: auto">
 		<h2 style="text-align:center;color:white">What do we do?</h2>
 	</div>
 
 
-	<div id="main" class="bg-image-white w3-animate-opacity w3-col l11 m8 s8 w3-center"><h1 style="text-align:left;color:red;">Website under construction</h1></div>
+	<div class="w3-container bg-image-white w3-animate-opacity w3-col l11 m11 s11 w3-center"><h1 style="text-align:left;color:red;">Website under construction</h1></div>
 
 </div>
 <br>
