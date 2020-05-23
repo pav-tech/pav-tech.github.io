@@ -108,13 +108,21 @@ h3,h4,h5,h6 {
 	}
 	
 h2  {
-	text-shadow: 2px 1px #222;
-	vertical-align: top;
-	line-height: 1;
-	font-size: auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:300px;
+	font-size:1.5vw;
+	line-height: 1.5;
 	font-family: 'Arial', sans-serif;
 	}
-	
+
+a {
+	color:dimgray;
+	position:initial;
+	font-size:1.1em;
+	}
+
 	
 p {
 	margin-bottom:0px;
@@ -170,8 +178,11 @@ p {
 #contact {
 	padding-top:3%!important;
 	padding-bottom:3%!important;
-	padding-left:3%!important;
 	height:200px;
+	}
+	
+#contact-font {
+	font-size:1.3em;
 	}
 
 
@@ -184,13 +195,13 @@ p {
 		}
 
 	.mainlogo_t {
-		width: 29%;
+		width: 35%;
 		height: auto;
 		}
 
 
 	.mainlogo_gap {
-		width: 7%;
+		width: 10%;
 		height: auto;
 		}
 
@@ -199,8 +210,16 @@ p {
 
 @media only screen and (max-width: 992px) {
 
+	h2 {
+		font-size:5.5em;
+		}
+	
 	h3 {
 		font-size: 6em;
+		}
+	
+	a {
+		font-size:4em;
 		}
 	
 	#body_margin {
@@ -272,11 +291,12 @@ p {
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-animate-opacity w3-top w3-mobile w3-hide-large">
-  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="home.html" class="w3-bar-item w3-button header-home" style="width:25% !important">HOME</a>
-    <a href="about.html" class="w3-bar-item w3-button header-about" style="width:25% !important">ABOUT</a>
-    <a href="pricing.html" class="w3-bar-item w3-button header-pricing" style="width:25% !important">PRICING</a>
-    <a href="contact.html" class="w3-bar-item w3-button header-contact" style="width:25% !important">CONTACT</a>
+  <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="home.html" class="w3-bar-item w3-card-4 header-home" style="width:20% !important;font-size:1em;color:white;">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-card-4 header-about" style="width:20% !important;font-size:1em;color:white;">ABOUT</a>
+    <a href="pricing.html" class="w3-bar-item w3-card-4 header-pricing" style="width:20% !important;font-size:1em;color:white;">PRICING</a>
+    <a href="contact.html" class="w3-bar-item w3-card-4 header-contact" style="width:20% !important;font-size:1em;color:white;">CONTACT</a>
+    <a href="contact.html" class="w3-bar-item w3-card-4 header-contact" style="width:20% !important;font-size:1em;color:white;">CONTACT</a>
   </div>
 </div>
 
@@ -306,24 +326,24 @@ p {
 
 <div class="w3-bar-item" style="width:15%;"></div>
   <!-- Menu buttons -->
-  <a href="home.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-home" style="width:14%;">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-medium w3-card-4 w3-hover-none header-home" style="width:14%;">
     <i class="fas fa-home w3-xxlarge" style="color: rgb(102,102,204);"></i>
-    <p style="color: white;"><u>HOME</u></p>
+    <p style="color: white;">HOME</p>
   </a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-about" style="width:14%;">
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-medium w3-card-4 w3-hover-none header-about" style="width:14%;">
     <i class="far fa-snowflake w3-xxlarge"style="color: white;"></i>
     <p style="color: white;">REFRIGERATION</p>
   </a>
-  <a href="pricing.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-pricing" style="width:14%;">
+  <a href="pricing.html" class="w3-bar-item w3-button w3-padding-medium w3-card-4 w3-hover-none header-pricing" style="width:14%;">
     <i class="fas fa-wind fa-fade w3-xxlarge"style="color: white;"></i>
     <p style="color: white;">AC HP</p>
   </a>
-  <a href="catering.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-contact" style="width:14%;">
+  <a href="catering.html" class="w3-bar-item w3-button w3-padding-medium w3-card-4 w3-hover-none header-contact" style="width:14%;">
     <i class="fas fa-coffee w3-xxlarge"style="color: white;"></i>
     <p style="color: white;">CATERING</p>
   </a>
 
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-contact" style="width:14%;">
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-medium w3-card-4 w3-hover-none header-contact" style="width:14%;">
     <i class="far fa-envelope w3-xxlarge"style="color: white;"></i>
     <p style="color: white;">CONTACT</p>
   </a>
@@ -333,38 +353,29 @@ p {
 
 <div class="flex-container bg-image-box2" id="main_margin">
 
-	<div id="main_part" class="w3-container w3-animate-opacity w3-col l5 m5 s6 w3-center" style="background-color: transparent!important;height: auto;border-radius: 15px 15px 0 0;margin-right: 0px;margin-left: 0px;padding-left:15%;padding-right:15%;">
-		<h2 style="text-align:center;color:white">box 1<br>text1</h2>
+	<div id="main_part" class="w3-container w3-animate-opacity w3-col l8 m11 s11 w3-center" style="background-color: transparent!important;min-height: 300px;border-radius: 15px 15px 0 0;margin-right: 0px;margin-left: 0px;">
+		<h2 style="text-align:center;color:white"><b>Small local business specializing in repairs and fault finding. Our experience comes from years of working in commercial catering, refrigeration and air conditioniing repairs. We are based in Midhurst, West Sussex and we invite you to contact us.</b></h2>
 	</div>
 
 <div>
 <br>
 </div>
 
-	<div id="main_part" class="w3-container w3-white w3-animate-opacity w3-col l6 m6 s6 bg-image-main" style="min-height: 300px;margin-bottom:5%;margin-top:5%;">
-		<h2 style="text-align:left;text-shadow:none;margin-left:40%;">
-		<b style="margin-left:15px;margin-top:15px;">box2</b></style><br><br>
-		<ul style="font-size:0.8em;">
-		<li style="color:red;"><span style="color:black;">Air Conditioning and Heat Pumps</span></li><br>
-		<li style="color:red;"><span style="color:black;">Refrigeration Equipment</span></li><br>
-		<li style="color:red;"><span style="color:black;">Catering Equipment</span></li><br>
-		</ul>
-		</h2>
-	</div>
+	<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/samochod">Samochód plik wektorowy utworzone przez starline - pl.freepik.com</a>
 </div>
 
 
 <div class="flex-container bg-image-box2" id="main_margin">
 
-	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center bg-image-white" style="min-height:250px;padding-right: 0px;padding-left: 0px">
+	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center bg-image-wite" style="min-height:250px;padding-right: 0px;padding-left: 0px">
 
 		<h3 id="contact" style="text-align:center; color: rgb(105,105,105);margin-top:0px;">
-		<b><span style="color:black;"><i>Contact</i></span></b>
+		<b><span style="color:white;font-size:1.7em;"><i>Contact</i></span></b>
 		<br><br>
-		<i class="fa fa-phone w3-white" style="font-align: middle"></i>
-		<span style="padding-right:5em;">(0)7426 330 130</span>
-		<i class="fa fa-at w3-white"></i>
-		<a href="mailto:info@pav-tech.co.uk">info@pav-tech.co.uk</a>
+		<i class="fa fa-phone" style="font-align: middle;color: rgb(102,102,204);"></i>
+		<span id="contact-font" style="padding-right:5em;color:white;"><b>(0)7426 330 130</span>
+		<i class="fa fa-at" style="color: rgb(102,102,204);"></i>
+		<a id="contact-font" href="mailto:info@pav-tech.co.uk" style="color:white;">info@pav-tech.co.uk</b></a>
 		</h3>
 
 	</div>
@@ -376,6 +387,6 @@ p {
 <p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
 <a href="https://pl.freepik.com/darmowe-zdjecie-wektory/tlo" style="color:grey;font-size:10px;">>Tło zdjęcie utworzone przez freepik - pl.freepik.com</a>
 </div>
-<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/samochod">Samochód plik wektorowy utworzone przez starline - pl.freepik.com</a>
+
 	</body>
 </html>
