@@ -17,16 +17,16 @@
 
 
 body {
-	background-color: rgb(8,8,8);
+	background-color: rgb(0,0,0);
 	}
 
 .bg-image {
   background-image: url("background.jpg"); /* The image used */
   background-color: rgb(20,20,20); /* Used if the image is unavailable */
   height: 600px; /* You must set a specified height */
-  background-position: center; /* Center the image */
+  background-position:center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: contain; /* Resize the background image to cover the entire container */
 }
 
 
@@ -35,10 +35,47 @@ body {
   background-color: white; /* Used if the image is unavailable */
   height: auto; /* You must set a specified height */
   width: 100%;
-  background-position: right; /* Center the image */
+  background-position: right bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain; /* Resize the background image to cover the entire container */
 }
+
+
+.bg-image-main {
+  background-image: url("backgroundmain.jpg"); /* The image used */
+  background-color: white; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  width: 100%;
+  background-position:center left; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+}
+
+
+.bg-image-menu {
+  background-image: url("backgroundmenu.png"); /* The image used */
+  background-color: transparent; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  width: 100%;
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+.bg-image-box2 {
+  background-image: url("backgroundmainbox.jpg"); /* The image used */
+  background-color: black; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  width: 100%;
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  box-shadow:0 0 30px 0 rgba(102,102,204,0.8) inset;
+  background-size:cover ; /* Resize the background image to cover the entire container */
+}
+
+
 
 #opac {
 	opacity: 0.5}
@@ -77,38 +114,48 @@ h2  {
 	font-size: auto;
 	font-family: 'Arial', sans-serif;
 	}
+	
+	
+p {
+	margin-bottom:0px;
+	}
 
 
 .hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-	color: auto;
+	padding-top:5%;
 	}
 
 
 .w3-sidebar {
-	width: 123px;
+	max-width: 123px;
 	min-height: auto;
 	align-items: middle;
 	background: #222;
 	}
 
 #body_margin {
-	margin: 1px 1px 1px 1px;
+	margin: 1px 5% 1px 5%;
 	}
 
 
 #main_margin {
-	margin: 25px 0px 25px 125px;
+	margin: 25px 0 25px 0;
 	font-size:0.1em;
+	}
+	
+	
+#logo_margin {
+	margin: 100px 3% 100px 3%;
+	}
+	
+	
+#box-margin {
+	margin: 0px 10% 100px 10%!important;
 	}
 
 
 #main_part {
+	background-color: rgb(240,240,240)!important;
 	margin-left: 10px;
 	margin-right: 10px;
 	font-size:2.2em;
@@ -116,11 +163,14 @@ h2  {
 
 
 #main_hr {
-	margin: 15px 0px 15px 123px;
+	margin: 15px 3% 15px 3%;
 	}
 
 
 #contact {
+	padding-top:3%!important;
+	padding-bottom:3%!important;
+	padding-left:3%!important;
 	height:200px;
 	}
 
@@ -129,19 +179,18 @@ h2  {
 /* Logo size on large and medium screens */
 	
 	.mainlogo_l {
-		position: right;
-		width: 20%;
+		width: 13%;
 		height: auto;
 		}
 
 	.mainlogo_t {
-		width: 44%;
+		width: 29%;
 		height: auto;
 		}
 
 
 	.mainlogo_gap {
-		width: 30%;
+		width: 7%;
 		height: auto;
 		}
 
@@ -181,6 +230,18 @@ h2  {
 	img {
 		width:20%;
 		}
+		
+	div {
+		min-height:50px!important;
+		}
+		
+	.bg-image-main {
+		background-image:none;
+		}
+		
+	.bg-image-white {
+		background-size: 65% auto;
+		}
 
 	.mainlogo_l {
 		width: 20%;
@@ -207,40 +268,7 @@ h2  {
 </head>
 
 <body>
-<!-- Fading logo... -->
 
-
-
-
-
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav style="height: 100%; border-right-color: #222; border-right-width: 1px; border-right-style: solid; border-left-color: #222; border-left-width: 1px; border-left-style: solid; top:0px;" class="w3-animate-opacity w3-sidebar w3-bar-block w3-small w3-hide-medium w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <div class="w3-bar-item bg-image" style="opacity:0.3; margin:auto; background-color: #222; height:150px"></div>
-  <!-- Menu buttons -->
-  <a href="home.html" class="w3-bar-item w3-button w3-padding-small w3-grey w3-hover-black header-home" style="padding-top: 15px!important;padding-bottom: 15px;important">
-    <i class="fas fa-home w3-xxlarge" style="color: rgb(102,102,204);"></i>
-    <p>HOME</p>
-  </a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-small w3-black w3-hover-grey header-about" style="padding-top: 15px!important;padding-bottom: 15px;important">
-    <i class="far fa-snowflake w3-xxlarge"></i>
-    <p>REFRIGERATION</p>
-  </a>
-  <a href="pricing.html" class="w3-bar-item w3-button w3-padding-small w3-black w3-hover-grey header-pricing" style="padding-top: 15px!important;padding-bottom: 15px;important">
-    <i class="fas fa-wind fa-fade w3-xxlarge"></i>
-    <p>AC HP</p>
-  </a>
-  <a href=".html" class="w3-bar-item w3-button w3-padding-small w3-black w3-hover-grey header-contact" style="padding-top: 15px!important;padding-bottom: 15px;important">
-    <i class="fas fa-coffee w3-xxlarge"></i>
-    <p>CATERING</p>
-  </a>
-
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-small w3-black w3-hover-grey header-contact" style="padding-top: 15px!important;padding-bottom: 15px;important">
-    <i class="far fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-animate-opacity w3-top w3-mobile w3-hide-large">
@@ -253,7 +281,7 @@ h2  {
 </div>
 
 <!-- Page content -->
-<div class="flex-container" id="main_margin">
+<div class="flex-container" id="logo_margin">
 
 	<h1 class="w3-animate-opacity mainlogo_l" style="margin-top: 0px; margin-bottom: 0px;">
 
@@ -272,18 +300,50 @@ h2  {
 
 </div>
 
-<hr class="hr w3-animate-opacity" id="main_hr" style="color:white;height:2px;width:100%;margin-top: 2px;margin-bottom: 2px;border-top-width: 1px;border-bottom-width: 1px;">
 
-<div class="flex-container" id="main_margin">
+<!-- Menu Bar (Hidden on small screens) -->
+<nav id="box-margin" style="height: 100%;width:80%;" class="w3-card-4 w3-animate-opacity w3-round-xxlarge w3-bar w3-small w3-hide-medium w3-hide-small w3-center bg-image-menu">
 
-	<div id="main_part" class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center" style="background-color: rgb(105,105,105);height: auto;border-radius: 15px 15px 0 0;margin-right: 0px;margin-left: 0px;">
-		<h2 style="text-align:center;color:white">HOME</h2>
+<div class="w3-bar-item" style="width:15%;"></div>
+  <!-- Menu buttons -->
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-home" style="width:14%;">
+    <i class="fas fa-home w3-xxlarge" style="color: rgb(102,102,204);"></i>
+    <p style="color: white;"><u>HOME</u></p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-about" style="width:14%;">
+    <i class="far fa-snowflake w3-xxlarge"style="color: white;"></i>
+    <p style="color: white;">REFRIGERATION</p>
+  </a>
+  <a href="pricing.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-pricing" style="width:14%;">
+    <i class="fas fa-wind fa-fade w3-xxlarge"style="color: white;"></i>
+    <p style="color: white;">AC HP</p>
+  </a>
+  <a href="catering.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-contact" style="width:14%;">
+    <i class="fas fa-coffee w3-xxlarge"style="color: white;"></i>
+    <p style="color: white;">CATERING</p>
+  </a>
+
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-small w3-card-4 w3-hover-none header-contact" style="width:14%;">
+    <i class="far fa-envelope w3-xxlarge"style="color: white;"></i>
+    <p style="color: white;">CONTACT</p>
+  </a>
+  
+<div class="w3-bar-item" style="width:15%;"></div>
+</nav>
+
+<div class="flex-container bg-image-box2" id="main_margin">
+
+	<div id="main_part" class="w3-container w3-animate-opacity w3-col l5 m5 s6 w3-center" style="background-color: transparent!important;height: auto;border-radius: 15px 15px 0 0;margin-right: 0px;margin-left: 0px;padding-left:15%;padding-right:15%;">
+		<h2 style="text-align:center;color:white">box 1<br>text1</h2>
 	</div>
 
-<hr class="hr w3-col l11 m11 s11 w3-animate-opacity" style="height:2px; margin-top:0px; margin-bottom: 0px;">
-	<div id="main_part" class="w3-container w3-white w3-animate-opacity w3-col l11 m11 s11 w3-center" style="min-height: 300px;margin-bottom:0px;">
-		<h2 style="text-align:left;text-shadow: none;">
-		<b style="margin-left:15px;">Things we can help you with</b></style><br><br>
+<div>
+<br>
+</div>
+
+	<div id="main_part" class="w3-container w3-white w3-animate-opacity w3-col l6 m6 s6 bg-image-main" style="min-height: 300px;margin-bottom:5%;margin-top:5%;">
+		<h2 style="text-align:left;text-shadow:none;margin-left:40%;">
+		<b style="margin-left:15px;margin-top:15px;">box2</b></style><br><br>
 		<ul style="font-size:0.8em;">
 		<li style="color:red;"><span style="color:black;">Air Conditioning and Heat Pumps</span></li><br>
 		<li style="color:red;"><span style="color:black;">Refrigeration Equipment</span></li><br>
@@ -291,15 +351,22 @@ h2  {
 		</ul>
 		</h2>
 	</div>
+</div>
 
-<hr class="hr w3-col l11 m11 s11 w3-animate-opacity">
 
-	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center" style="min-height:400px;padding-right: 0px;padding-left: 0px">
-		<h3 id="contact" class="bg-image-white" style="text-align:left; color: rgb(105,105,105);margin-top:0px;padding-left: 15px;"><b><span style="color:black;"><i>Contact</i></span></b><br><br>
+<div class="flex-container bg-image-box2" id="main_margin">
+
+	<div class="w3-container w3-animate-opacity w3-col l11 m11 s11 w3-center bg-image-white" style="min-height:250px;padding-right: 0px;padding-left: 0px">
+
+		<h3 id="contact" style="text-align:center; color: rgb(105,105,105);margin-top:0px;">
+		<b><span style="color:black;"><i>Contact</i></span></b>
+		<br><br>
 		<i class="fa fa-phone w3-white" style="font-align: middle"></i>
-		<span>(0)7426 330 130</span><br>
+		<span style="padding-right:5em;">(0)7426 330 130</span>
 		<i class="fa fa-at w3-white"></i>
-		<a href="mailto:info@pav-tech.co.uk">info@pav-tech.co.uk</a></h3>
+		<a href="mailto:info@pav-tech.co.uk">info@pav-tech.co.uk</a>
+		</h3>
+
 	</div>
 
 </div>
@@ -307,7 +374,8 @@ h2  {
 
 <div class="w3-animate-opacity w3-col l11 m2 s2 w3-right">
 <p class="hub" style="text-align:right;font-size:8px;color:rgb(100,100,100);">Tested with GitHub Pages.</p>
+<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/tlo" style="color:grey;font-size:10px;">>Tło zdjęcie utworzone przez freepik - pl.freepik.com</a>
 </div>
-
+<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/samochod">Samochód plik wektorowy utworzone przez starline - pl.freepik.com</a>
 	</body>
 </html>
