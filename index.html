@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/w3css_fonts.asp">
 <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 
@@ -111,16 +113,19 @@ h3,h4,h5,h6 {
 	font-size: 30px;
 	}
 	
-h1 h2  {
+h1  {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	min-height:350px;
-	font-size:1.5vw;
-	line-height: 1.5;
-	font-family: 'Arial', sans-serif;
+	font-size:2.2vw;
+	line-height: 1.35;
+	font-family: 'Cantarell', sans-serif;
 	}
-
+	
+h2 {
+	margin-left:16.6667%;
+	}
 
 	
 p {
@@ -218,10 +223,24 @@ hr {
 
 @media only screen and (max-width: 992px) {
 
-	h1 h2 {
-		font-size:3.5em;
+
+	h1 {
+		padding-bottom:20px!important;
+		font-size:2.8em!important;
+		min-height:100px;
+		}
+	
+	h2 {
+		font-size:3.5em!important;
+		margin-left: 0;
 		}
 
+
+	hr {
+		padding-top:0px;
+		margin-bottom:0px;
+		}
+	
 	
 	#a {
 		font-size:5em;
@@ -232,12 +251,18 @@ hr {
 		}
 	
 	#cont {
-		height:80px;
+		padding-top: 0px!important;
+		height:100px;
 		}
 		
 	#cont-font {
-		font-size: 3em
+		font-size: 0.3em;
 		}
+		
+	#logo_margin {
+		margin: 84px 3% 50px 3%;
+		}	
+	
 	
 	#main_hr {
 		margin-left: 0px;
@@ -252,7 +277,7 @@ hr {
 	#main_margin {
 		margin-left: 0px;
 		margin-right: 0px;
-		margin-top: 35px;
+		margin-top: 10px;
 		}
 
 	img {
@@ -357,19 +382,30 @@ hr {
   
 <div class="w3-bar-item" style="width:15%;"></div>
 </nav>
+
+
 <hr class="w3-animate-opacity" style="color:antiquewhite;">
 <div class="flex-container w3-animate-opacity w3-box bg-image-box2" id="main_margin">
 
-	<div id="main_part" class="w3-container w3-col l8 m11 s11 w3-center" style="background-color: transparent!important;min-height:400px;border-radius: 15px 15px 0 0;margin-right: 0px;margin-left: 0px;">
-	<h1 style="text-align:center;color:antiquewhite;padding-bottom:40px;">Refrigeration, AC/HP and catering equipment specialist? <b>Pav-Tech!</b></h1>
-		<h2 style="text-align:center;color:antiquewhite;">
+	<div id="main_part" class="w3-container w3-col l11 m11 s11 w3-center" style="background-color: transparent!important;min-height:400px;border-radius: 15px 15px 0 0;margin-right: 0px;margin-left: 0px;">
+	<h1 style="text-align:center;color:antiquewhite;padding-bottom:40px;">
+		<i style="color:darkgray" class="w3-hide-medium w3-hide-small w3-xxlarge fas fa-check-square"></i>
+		<i style="color:darkgray" class="w3-hide-large w3-xsmall fas fa-check-square"></i>&nbsp Refrigeration	&nbsp;	&nbsp;
+		<i style="color:darkgray" class="w3-hide-medium w3-hide-small w3-xxlarge fas fa-check-square"></i>
+		<i style="color:darkgray" class="w3-hide-large w3-xsmall fas fa-check-square"></i>&nbsp AC/HP	&nbsp;	&nbsp;
+		<i style="color:darkgray" class="w3-hide-medium w3-hide-small w3-xxlarge fas fa-check-square"></i>
+		<i style="color:darkgray" class="w3-hide-large w3-xsmall fas fa-check-square"></i>&nbsp Catering equipment &nbsp; &nbsp;
+		<i style="color:rgb(153,1,0);" class="w3-hide-medium w3-hide-small w3-xxlarge fas fa-check-square"></i>
+		<i style="color:rgb(153,1,0)" class="w3-hide-large w3-xsmall fas fa-check-square"></i><b style="color: rgb(102,102,204);font-family:'Rock Salt'">&nbsp PAV-TECH</b>
+	</h1>
+		<h2 class="w3-col l8" style="text-align:center;color:antiquewhite;">
 			<span style="font-family: 'Bad Script'; font-size:1.3em;color:white;">We're here to support your business!</span>
 			<p style="text-align:justify;text-indent:2%;padding-top:40px;">Pav-Tech is a small local business specializing in repairs and fault finding of refrigeration, AC/HP and catering 	equipment. Our experience comes from many years of working in a specialist role in commercial catering, refrigeration and air conditioniing repairs.</p>
 			<p></p>
 
 			<p>Check our website for more details. </p>
 			<br><br>
-			<p>We are based in Midhurst, West Sussex.</p>
+			<p style="padding-bottom:45px">We are based in Midhurst, West Sussex.</p>
 		</h2>
 	</div>
 
@@ -386,8 +422,7 @@ hr {
 	<div class="w3-container w3-col l11 m11 s11 w3-center" style="min-height:250px;padding-right: 0px;padding-left: 0px">
 
 		<h3 id="cont" style="text-align:center; color: rgb(105,105,105);margin-top:0px;">
-		<span style="color:white;font-size:1.4em;"><i>Contact</i></span>
-		<br><br>
+		<span id="cont-font" style="color:white"><i>Contact</i></span><br style="height:1px;">
 		<i class="fa fa-phone" style="font-align: middle;color: rgb(102,102,204);"></i>
 		<span id="cont-font" style="padding-right:5em;color:white;">(0)7426 330 130</span>
 		<i class="fa fa-at" style="color: rgb(102,102,204);"></i>
